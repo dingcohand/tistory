@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img
+      width="600"
+      src="https://github.com/dingcohand/tistory/blob/main/git/images/token-title.jpg?raw=true"
+      alt="썸네일"
+    />
+    <h2>목차</h2>
+    <ol>
+      <li><a href="#token">token 생성</a></li>
+      <li><a href="#windows">windows 자격 증명</a></li>
+    </ol>
+
+    <h2 id="token">token 생성</h2>
+    <p>
+      깃허브 프로필을 눌러 `Settings`를 클릭합니다.<br />
+      <img
+        width="800"
+        src="https://github.com/dingcohand/tistory/blob/main/git/images/access-token-01.jpg?raw=true"
+        alt=""
+      /><br />
+      좌측 하단에 있는 `Developer settings`를 클릭합니다.<br />
+      <img
+        width="800"
+        src="https://github.com/dingcohand/tistory/blob/main/git/images/access-token-02.jpg?raw=true"
+        alt=""
+      /><br />
+      `Personal access tokens` → `Tokens (classic)` → `Generate new token` →
+      `Generate new token (classic)`을 클릭합니다.<br />
+      <img
+        width="800"
+        src="https://github.com/dingcohand/tistory/blob/main/git/images/access-token-03.jpg?raw=true"
+        alt=""
+      /><br />
+      token 이름, 기간, 권한을 설정하고 맨 아래에 있는 Generate new token을
+      클릭합니다.<br />
+      <img
+        width="800"
+        src="https://github.com/dingcohand/tistory/blob/main/git/images/access-token-04.jpg?raw=true"
+        alt=""
+      /><br />
+      해당 페이지를 벗어나면 두 번 다시 token을 확인할 수 없으니 안전한 곳에
+      붙여넣기 해둡니다.<br />
+      <img
+        width="800"
+        src="https://github.com/dingcohand/tistory/blob/main/git/images/access-token-05.jpg?raw=true"
+        alt=""
+      /><br />
+    </p>
+    <h2 id="windows">windows 자격 증명</h2>
+    <p>
+      `제어판` → `사용자 계정` → `자격 증명 관리자` → `Windows 자격 증명`에
+      들어가 `일반 자격 증명 추가`를 클릭합니다.<br />
+      <img
+        width="800"
+        src="https://github.com/dingcohand/tistory/blob/main/git/images/access-token-06.jpg?raw=true"
+        alt=""
+      /><br />
+      인터넷 또는 네트워크 주소에는 `git:https://github.com`를, 사용자 이름에는
+      깃허브 아이디를, 암호에는 아까 복사해둔 token을 넣어줍니다.<br />
+      <img
+        width="800"
+        src="https://github.com/dingcohand/tistory/blob/main/git/images/access-token-07.jpg?raw=true"
+        alt=""
+      /><br />
+      이제 정상적으로 push 되는 것을 확인하실 수 있습니다 :)
+    </p>
+  </body>
+</html>
